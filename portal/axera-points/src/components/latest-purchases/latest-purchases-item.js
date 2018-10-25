@@ -7,9 +7,7 @@ export default class AppComponent extends JSXComponent {
                 <div class="autofit-col">
                     <div class="sticker sticker-secondary">
                         <span class="inline-item">
-                            <svg aria-hidden="true" class="lexicon-icon lexicon-icon-folder">
-                                <use href="/images/icons/icons.svg#folder" />
-                            </svg>
+                            <img aria-hidden="true" class="lexicon-icon lexicon-icon-folder" src="https://www.truekids.com.mx/documents/754225/756570/881924-600/81b5dbc5-8340-4453-b97f-8486dd03f63f?t=1521814261000"/>
                         </span>
                     </div>
                 </div>
