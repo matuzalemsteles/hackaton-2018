@@ -1,23 +1,25 @@
 import core from 'metal';
 import JSXComponent from 'metal-jsx';
+import PointsSummary from './components/points-summary/points-summary';
+import LatestPurchases from './components/latest-purchases/latest-purchases';
+import ProductsOffered from './components/products-offered/products-offered';
 
 export default class AppComponent extends JSXComponent {
 	render() {
         return (
-            <div>
-				<div>
-					<span class="tag">Portlet Namespace:</span> 
-					<span class="value">{this.props.portletNamespace}</span>
-				</div>
-
-				<div>
-					<span class="tag">Context Path:</span> 
-					<span class="value">{this.props.contextPath}</span>
-				</div>
-
-				<div>
-					<span class="tag">Portlet Element Id:</span>
-					<span class="value">{this.props.portletElementId}</span>
+            <div class="container">
+				<div class="row">
+					<div class="col-2">
+						<PointsSummary />
+					</div>
+					<div class="col-10">
+						<div class="col-12">
+							<LatestPurchases />
+						</div>
+						<div class="col-12">
+							<ProductsOffered />
+						</div>
+					</div>
 				</div>
 			</div>
         );
