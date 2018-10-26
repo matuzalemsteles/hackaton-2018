@@ -27,7 +27,7 @@ export default function(WrapperComponent) {
 
 			WeDeploy
 				.data('data-hackathon.wedeploy.io')
-				.where("customerId", "=", userId)
+				.where("userName", "=", userId)
 				.limit(3)
 				.get('/suggestions')
 				.then(res => {this.state.suggestions = res})
