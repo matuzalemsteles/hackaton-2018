@@ -40,7 +40,7 @@ class AppComponent extends JSXComponent {
 						</div>
 					</div>
 				</div>
-				<div class="col-12 clearfix bg-dark">
+				<div class="app-footer col-12 clearfix bg-dark">
 					<AppFooter />
 				</div>
 			</div>
