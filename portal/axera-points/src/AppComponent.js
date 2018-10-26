@@ -30,7 +30,7 @@ class AppComponent extends JSXComponent {
 						<PointsSummary points={points} />
 					</div>
 					<div class="col-md-9">
-						<ProductsOffered />
+						<ProductsOffered suggestions={suggestions} />
 					</div>
 				</div>
 			</div>

@@ -5,8 +5,8 @@ import WeDeploy from 'wedeploy/build/browser/api-min';
 export default function(WrapperComponent) {
 	class WithWeDeploy extends JSXComponent {
 		static STATE = {
-			data: Config.any(),
-			suggestions: Config.any(),
+			data: Config.any().value([]),
+			suggestions: Config.any().value([]),
 			error: Config.any().value({
 				errors: [],
 			}),
