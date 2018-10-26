@@ -29,7 +29,7 @@ class AppComponent extends JSXComponent {
 						<LatestPurchases />
 					</div>
 				</div>
-				<div class="col-12">
+				<div class="col-12 bg-white">
 					<AppFooter />
 				</div>
 			</div>
