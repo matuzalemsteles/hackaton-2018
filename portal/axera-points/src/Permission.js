@@ -2,6 +2,7 @@ import {Config} from 'metal-state';
 import {getUserRoles} from './util/LiferayService';
 import JSXComponent from 'metal-jsx';
 import AppComponent from './AppComponent';
+import Login from './Login';
 
 export default class Permission extends JSXComponent {
 	static STATE = {
@@ -17,6 +18,8 @@ export default class Permission extends JSXComponent {
 
 		if (rules.includes('User') || !window.Liferay) {
 			return <AppComponent />;
+		} else {
+			return <Login />;
 		}
 	}
 }

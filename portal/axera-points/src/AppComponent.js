@@ -7,10 +7,19 @@ import ProductsOffered from './components/products-offered/products-offered';
 
 class AppComponent extends JSXComponent {
     static PROPS = {
-        data: Config.any(),
+		data: Config.any(),
+		suggestions: Config.any(),
     }
 
 	render() {
+		const {data, suggestions} = this.props;
+
+		let points = 0;
+
+		if (data) {
+			points = data.reduce((preVal, elem) => preVal + parseInt(elem.points), 0);
+		}
+
         return (
             <div class="app-component container">
 				<div class="col-welcome">
@@ -18,7 +27,7 @@ class AppComponent extends JSXComponent {
 				</div>
 				<div class="row">
 					<div class="col-md-3">
-						<PointsSummary />
+						<PointsSummary points={points} />
 					</div>
 					<div class="col-md-9">
 						<ProductsOffered />

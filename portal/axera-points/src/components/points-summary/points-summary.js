@@ -2,10 +2,12 @@ import JSXComponent from 'metal-jsx';
 
 export default class AppComponent extends JSXComponent {
 	render() {
+        const {points} = this.props;
+
         return (
             <div class="sheet sheet-summary">
                 <p>Total de Pontos</p>
-                <h1>12000</h1>
+                <h1>{points}</h1>
                 <a class="link" href="#">
                     Ver extrato
                     <svg id="caret" viewBox="9 7 6 10" width="100%" height="100%">

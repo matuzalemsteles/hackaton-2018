@@ -1,5 +1,3 @@
-const userId = window.themeDisplay && window.themeDisplay.getUserId() || null;
-
 export const service = (path, params, callback) => {
 	if (window.Liferay) {
 		window.Liferay.Service(path, params, callback);
@@ -7,9 +5,15 @@ export const service = (path, params, callback) => {
 }
 
 export const getUserRoles = (callback) => {
-	service('/role/get-user-roles', {userId}, (result) => {
-		callback(
-			result.map(item => item.name)
-		);
+	const userId = window.themeDisplay && window.themeDisplay.getUserId() || '20139';
+
+	service('/role/get-user-roles', {userId}, (result = []) => {
+		if (typeof result === 'string') {
+			callback([]);
+		} else {
+			callback(
+				result.map(item => item.name)
+			);
+		}
 	});
 };

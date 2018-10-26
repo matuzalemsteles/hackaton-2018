@@ -4,12 +4,9 @@ import WeDeploy from 'wedeploy/build/browser/api-min';
 
 export default function(WrapperComponent) {
 	class WithWeDeploy extends JSXComponent {
-		static PROPS = {
-			userId: Config.string().value('123123'),
-		};
-
 		static STATE = {
 			data: Config.any(),
+			suggestions: Config.any(),
 			error: Config.any().value({
 				errors: [],
 			}),
@@ -18,20 +15,29 @@ export default function(WrapperComponent) {
 		/**
 		 * WeDeploy data consumer
 		 */
-		attached() {
+		created() {
+			const userId = window.themeDisplay && window.themeDisplay.getUserName() || '20139';
+
 			WeDeploy
 				.data('data-hackathon.wedeploy.io')
-				.where("customer", "=", this.props.userId)
+				.where("customerId", "=", userId)
 				.get('/points')
-				.then(res => this.setState({data: res}))
-				.catch(res => this.setState({error: res}));
+				.then(res => {this.state.data = res})
+				.catch(res => {this.state.error = res});
+
+			WeDeploy
+				.data('data-hackathon.wedeploy.io')
+				.where("customerId", "=", userId)
+				.get('/suggestions')
+				.then(res => {this.state.suggestions = res})
+				.catch(res => {this.satte.error = res});
 		}
 
 		/**
 		 * @inheritDoc
 		 */
 		render() {
-			const {error, data} = this.state;
+			const {error, data, suggestions} = this.state;
 
 			if (error.errors.length) {
 				return (
@@ -45,7 +51,7 @@ export default function(WrapperComponent) {
 			}
 
 			return (
-				<WrapperComponent data={data}>{this.props.children}</WrapperComponent>
+				<WrapperComponent data={data} suggestions={suggestions}>{this.props.children}</WrapperComponent>
 			);
 		}
 	}
