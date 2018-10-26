@@ -7,26 +7,21 @@ import ProductsOffered from './components/products-offered/products-offered';
 
 class AppComponent extends JSXComponent {
     static PROPS = {
-        portletNamespace: Config.string().value('(unknown portletNamespace)'),
-        contextPath: Config.string().value('(unknown contextPath)'),
-        portletElementId: Config.string().value('(unknown portletElementId)'),
         data: Config.any(),
     }
 
 	render() {
         return (
-            <div class="container">
+            <div class="app-component container">
+				<div class="col-welcome">
+					<h2>Welcome, <span>{window.themeDisplay && window.themeDisplay.getUserName() || 'Axera'}</span></h2>
+				</div>
 				<div class="row">
-					<div class="col-2">
+					<div class="col-md-3">
 						<PointsSummary />
 					</div>
-					<div class="col-10">
-						<div class="col-12">
-							<LatestPurchases />
-						</div>
-						<div class="col-12">
-							<ProductsOffered />
-						</div>
+					<div class="col-md-9">
+						<ProductsOffered />
 					</div>
 				</div>
 			</div>

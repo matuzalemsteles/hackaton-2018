@@ -1,13 +1,10 @@
 import {Config} from 'metal-state';
 import JSXComponent from 'metal-jsx';
-import WeDeploy from 'wedeploy';
+import WeDeploy from 'wedeploy/build/browser/api-min';
 
 export default function(WrapperComponent) {
 	class WithWeDeploy extends JSXComponent {
 		static PROPS = {
-			portletNamespace: Config.string().value('(unknown portletNamespace)'),
-			contextPath: Config.string().value('(unknown contextPath)'),
-			portletElementId: Config.string().value('(unknown portletElementId)'),
 			userId: Config.string().value('123123'),
 		};
 
@@ -48,7 +45,7 @@ export default function(WrapperComponent) {
 			}
 
 			return (
-				<WrapperComponent data={data} {...this.props}>{this.props.children}</WrapperComponent>
+				<WrapperComponent data={data}>{this.props.children}</WrapperComponent>
 			);
 		}
 	}

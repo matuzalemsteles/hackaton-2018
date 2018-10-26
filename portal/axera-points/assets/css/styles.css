@@ -1,0 +1,92 @@
+.navbar.navbar-classic.navbar-expand-md.navbar-light {
+	padding-bottom: 0 !important;
+}
+
+.navbar.navbar-classic.navbar-expand-md.navbar-light > .container {
+	display: none;
+}
+
+.app-component a {
+	color: #6d2b76 !important;
+}
+
+.bg-checkered {
+	background-image: none !important;
+}
+
+.badge {
+	font-size: 0.825rem !important;
+}
+
+.col-welcome {
+	margin-bottom: 30px;
+}
+
+.col-welcome h2 {
+	font-weight: 400;
+}
+
+.col-welcome span {
+	font-weight: 600;
+	color: #6d2b76;
+}
+
+.sheet-summary {
+	padding-bottom: 1.5rem !important;
+	margin-bottom: 35px;
+}
+
+.sheet-summary p {
+	margin-bottom: 0;
+}
+
+.sheet-summary h1 {
+	margin-bottom: 20px;
+}
+
+.link {
+	display: flex;
+    align-items: center;
+}
+
+.link:hover svg {
+	transform: translateX(0.5em);
+}
+
+.link svg {
+	height: 12px;
+	width: 8px;
+	margin-left: 7px;
+	margin-top: 2px;
+	transition: transform 333ms ease;
+}
+
+.card {
+	box-shadow: none !important;
+	border-width: 1px !important;
+    border-color: #e7e7ed !important;
+}
+
+.products-section {
+	margin-bottom: 40px;
+}
+
+.jumbotron {
+	background-color: #6d2b76 !important;
+	color: #fff;
+}
+
+.jumbotron p {
+	color: #a66aa9;
+}
+
+.jumbotron a {
+	color: #fff !important;
+}
+
+.products-list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}

@@ -1,5 +1,5 @@
 
-import AppComponent from './AppComponent';
+import Permission from './Permission';
 
 
 /**
@@ -27,6 +27,6 @@ export default function main({portletNamespace, contextPath, portletElementId}) 
     
     const node = document.getElementById(portletElementId);
 
-	new AppComponent({portletNamespace, contextPath, portletElementId}, node);
+	new Permission({portletNamespace, contextPath, portletElementId}, node);
     
 };
