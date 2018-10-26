@@ -22,7 +22,7 @@ export default class AppComponent extends JSXComponent {
                     <div class="row">
                         <div class="products-list">
                             {suggestions.map(item => (
-                                <ProductOfferedItem discount={item.discount} name={item.name} value={item.value} imageUrl={item.imageUrl} />
+                                <ProductOfferedItem name={item.name} value={item.value} imageUrl={item.imageUrl} />
                             ))}
                         </div>
                     </div>

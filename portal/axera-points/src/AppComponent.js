@@ -36,7 +36,7 @@ class AppComponent extends JSXComponent {
 							<ProductsOffered suggestions={suggestions} />
 						</div>
 						<div class="col-lg-9 col-md-12 offset-lg-3 offset-sm-0 offset-dm-0">
-							<LatestPurchases />
+							<LatestPurchases data={data} />
 						</div>
 					</div>
 				</div>
