@@ -1,5 +1,5 @@
 dependencies {
-	compileOnly group: "org.osgi", name: "osgi.cmpn", version: "6.0.0"
 	compileOnly files("../../.m2/repository/com/liferay/portal/com.liferay.portal.kernel/3.0.0/portal-kernel.jar")
-	compileOnly files("../../.m2/repository/com/liferay/com.liferay.commerce.api/1.0.0/com.liferay.commerce.api-1.0.0.jar")
+	compileOnly files("../../bundles/osgi/modules/com.liferay.commerce.api.jar")
+	compileOnly group: "org.osgi", name: "osgi.cmpn", version: "6.0.0"
 }
