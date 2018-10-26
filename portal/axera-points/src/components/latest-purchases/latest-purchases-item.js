@@ -1,22 +1,38 @@
-import JSXComponent from 'metal-jsx';
+import JSXComponent, {Config} from 'metal-jsx';
 
 export default class AppComponent extends JSXComponent {
+    static PROPS = {
+        name: Config.string(),
+        date: Config.string(),
+        points: Config.string(),
+        imageUrl: Config.string()
+    };
+    
 	render() {
+        const {name, points, imageUrl, date} = this.props;
         return (
             <li class="list-group-item list-group-item-flex">
                 <div class="autofit-col">
                     <div class="sticker sticker-secondary">
                         <span class="inline-item">
-                            <img aria-hidden="true" class="lexicon-icon lexicon-icon-folder" src="https://www.truekids.com.mx/documents/754225/756570/881924-600/81b5dbc5-8340-4453-b97f-8486dd03f63f?t=1521814261000"/>
+                            <img style="height:42px; width:42px" aria-hidden="true" class="lexicon-icon lexicon-icon-folder" src={imageUrl}/>
                         </span>
                     </div>
                 </div>
                 <div class="autofit-col autofit-col-expand">
                     <section class="autofit-section">
                         <h4 class="list-group-title">
-                            <a href="#1">Account Example One</a>
+                            <span href="#1">{name}</span>
                         </h4>
-                        <p class="list-group-subtext">List Group Subtext</p>
+                        <p class="list-group-subtext">{points} pontos</p>
+                    </section>
+                </div>
+                <div class="autofit-col autofit-col-expand">
+                    <section class="autofit-section">
+                        <h5 class="list-group-title text-right">
+                            <span href="#1" class="text-right">Data da compra</span>
+                        </h5>
+                        <p class="list-group-subtext text-right">{date}</p>
                     </section>
                 </div>
             </li>
