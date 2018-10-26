@@ -21,7 +21,7 @@ export default class AppComponent extends JSXComponent {
                     </div>
                     <div class="row">
                         <div class="products-list">
-                            {suggestions.map(item => (
+                            {suggestions.filter((item,index) => index < 6).map(item => (
                                 <ProductOfferedItem name={item.name} value={item.value} imageUrl={item.imageUrl} />
                             ))}
                         </div>
