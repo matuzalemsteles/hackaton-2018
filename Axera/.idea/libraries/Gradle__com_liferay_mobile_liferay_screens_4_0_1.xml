@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay.mobile:liferay-screens-4.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/liferay-screens-4.0.1.aar/2d5b84434a5be7a26b2f49fb43f6a511/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/liferay-screens-4.0.1.aar/2d5b84434a5be7a26b2f49fb43f6a511/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.mobile/liferay-screens/4.0.1/42205bd0b52644e8994870635e753e672ca8bb29/liferay-screens-4.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

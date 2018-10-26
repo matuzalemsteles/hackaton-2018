@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay.mobile:liferay-android-sdk-7.1.3">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/liferay-android-sdk-7.1.3.aar/45b90ddec10fe9b3221cb5938942463b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/liferay-android-sdk-7.1.3.aar/45b90ddec10fe9b3221cb5938942463b/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.mobile/liferay-android-sdk/7.1.3/a22431564e03b532ee25d930b855152c79cb6fa3/liferay-android-sdk-7.1.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
