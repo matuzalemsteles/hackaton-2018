@@ -19,7 +19,7 @@ export default class Permission extends JSXComponent {
 		if (rules.includes('User') || !window.Liferay) {
 			return <AppComponent />;
 		} else {
-			return <Login />;
+			// return <Login />;
 		}
 	}
 }
