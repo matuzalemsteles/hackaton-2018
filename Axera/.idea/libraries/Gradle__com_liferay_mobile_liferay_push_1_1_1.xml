@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.liferay.mobile:liferay-push-1.1.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/liferay-push-1.1.1.aar/bc3eb0e056287fa7cda8bfc8028ac92c/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/liferay-push-1.1.1.aar/bc3eb0e056287fa7cda8bfc8028ac92c/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.liferay.mobile/liferay-push/1.1.1/58e7b32dd0cbae29db5809d558ec9907622e722e/liferay-push-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
