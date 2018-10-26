@@ -23,7 +23,7 @@ class AppComponent extends JSXComponent {
 					<div class="col-md-9">
 						<ProductsOffered />
 					</div>
-					<div class="col-9 offset-md-3">
+					<div class="col-lg-9 col-md-12 offset-lg-3 offset-sm-0 offset-dm-0">
 						<LatestPurchases />
 					</div>
 				</div>

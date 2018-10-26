@@ -4,10 +4,10 @@ export default class AppComponent extends JSXComponent {
 	render() {
         return (
             <div class="sheet sheet-summary">
-                <p>Total de Pontos</p>
+                <p>Total Score</p>
                 <h1>12000</h1>
                 <a class="link" href="#">
-                    Ver extrato
+                    See Purchase Summary
                     <svg id="caret" viewBox="9 7 6 10" width="100%" height="100%">
                         <polyline
                             fillRule="evenodd" 

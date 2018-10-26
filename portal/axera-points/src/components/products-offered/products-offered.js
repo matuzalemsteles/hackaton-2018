@@ -10,11 +10,11 @@ export default class AppComponent extends JSXComponent {
                         <div class="col-md-12">
                             <div class="jumbotron">
                                 <div class="container">
-                                    <h1 class="display-4">Troque por produtos</h1>
-                                    <p class="lead">Troque seus pontos por diversos produtos nas lojas físicas da <a>TAF</a> ou nas lojas eletrônicas da <a>GNC</a>.</p>
+                                    <h1 class="display-4">Exchange for products</h1>
+                                    <p class="lead">Exchange your points for various products at <a>TAF</a> physical stores or at <a>GNC</a> electronic stores.</p>
                                 </div>
                             </div>
-                            <h3>Produtos naturais</h3>
+                            <h3>Natural Products</h3>
                         </div>
                     </div>
                     <div class="row">
@@ -28,7 +28,7 @@ export default class AppComponent extends JSXComponent {
                 <div class="products-section">
                     <div class="row">
                         <div class="col-md-12">
-                            <h3>Corrida</h3>
+                            <h3>Running Shoes</h3>
                         </div>
                     </div>
                     <div class="row">
