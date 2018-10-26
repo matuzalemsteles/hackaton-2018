@@ -2,5 +2,9 @@
     {
         "path": "/points/*",
         "data": true
+    },
+    {
+        "path": "/suggestions/*",
+        "data": true
     }
 ]
